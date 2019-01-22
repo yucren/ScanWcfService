@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Lonking.CN.JGYFScanWcfService.ScanServer" CodeBehind="ScanServer.svc.cs" %>
