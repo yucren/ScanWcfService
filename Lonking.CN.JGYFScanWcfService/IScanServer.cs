@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Lonking.CN.JGYFScanWcfService.Modal;
+using Lonking.CN.JGYFScanWcfService.Modal.K3Modal;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
@@ -15,5 +18,18 @@ namespace Lonking.CN.JGYFScanWcfService
         void DoWork();
         [OperationContract]
         string GetCount();
+        [OperationContract]
+        
+        string ScanIn(Stream stream);
+        [OperationContract]
+        string ScanOut(Stream stream);
+        [OperationContract(Name ="ScanInWCE")]
+        string ScanIn(ScanInHead scanInHead);
+        [OperationContract(Name = "ScanOutWCE")]
+        string ScanOut(ScanOutHead scanOutHead);
+        [OperationContract]
+       IQueryable<vwICBill_8> GetSaleBillInfo(string billNo);
+
+
     }
 }

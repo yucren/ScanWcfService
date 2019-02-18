@@ -9,7 +9,291 @@
 //------------------------------------------------------------------------------
 
 namespace ClientUintTest.ServiceReference1 {
+    using System.Runtime.Serialization;
+    using System;
     
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ScanInHead", Namespace="http://schemas.datacontract.org/2004/07/Lonking.CN.JGYFScanWcfService.Modal")]
+    [System.SerializableAttribute()]
+    public partial class ScanInHead : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DocNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NoteField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string OperatorField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private decimal ScanCountField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClientUintTest.ServiceReference1.ScanInEntry[] ScanEntrysField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime ScantimeField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string DocNo {
+            get {
+                return this.DocNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DocNoField, value) != true)) {
+                    this.DocNoField = value;
+                    this.RaisePropertyChanged("DocNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ID {
+            get {
+                return this.IDField;
+            }
+            set {
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Note {
+            get {
+                return this.NoteField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NoteField, value) != true)) {
+                    this.NoteField = value;
+                    this.RaisePropertyChanged("Note");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Operator {
+            get {
+                return this.OperatorField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OperatorField, value) != true)) {
+                    this.OperatorField = value;
+                    this.RaisePropertyChanged("Operator");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal ScanCount {
+            get {
+                return this.ScanCountField;
+            }
+            set {
+                if ((this.ScanCountField.Equals(value) != true)) {
+                    this.ScanCountField = value;
+                    this.RaisePropertyChanged("ScanCount");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClientUintTest.ServiceReference1.ScanInEntry[] ScanEntrys {
+            get {
+                return this.ScanEntrysField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ScanEntrysField, value) != true)) {
+                    this.ScanEntrysField = value;
+                    this.RaisePropertyChanged("ScanEntrys");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Scantime {
+            get {
+                return this.ScantimeField;
+            }
+            set {
+                if ((this.ScantimeField.Equals(value) != true)) {
+                    this.ScantimeField = value;
+                    this.RaisePropertyChanged("Scantime");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ScanInEntry", Namespace="http://schemas.datacontract.org/2004/07/Lonking.CN.JGYFScanWcfService.Modal")]
+    [System.SerializableAttribute()]
+    public partial class ScanInEntry : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ItemCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ItemModelField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ItemNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClientUintTest.ServiceReference1.ScanInHead ScanInHeadField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int ScanInHeadIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SnField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ID {
+            get {
+                return this.IDField;
+            }
+            set {
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ItemCode {
+            get {
+                return this.ItemCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ItemCodeField, value) != true)) {
+                    this.ItemCodeField = value;
+                    this.RaisePropertyChanged("ItemCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ItemModel {
+            get {
+                return this.ItemModelField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ItemModelField, value) != true)) {
+                    this.ItemModelField = value;
+                    this.RaisePropertyChanged("ItemModel");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ItemName {
+            get {
+                return this.ItemNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ItemNameField, value) != true)) {
+                    this.ItemNameField = value;
+                    this.RaisePropertyChanged("ItemName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClientUintTest.ServiceReference1.ScanInHead ScanInHead {
+            get {
+                return this.ScanInHeadField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ScanInHeadField, value) != true)) {
+                    this.ScanInHeadField = value;
+                    this.RaisePropertyChanged("ScanInHead");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ScanInHeadID {
+            get {
+                return this.ScanInHeadIDField;
+            }
+            set {
+                if ((this.ScanInHeadIDField.Equals(value) != true)) {
+                    this.ScanInHeadIDField = value;
+                    this.RaisePropertyChanged("ScanInHeadID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Sn {
+            get {
+                return this.SnField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SnField, value) != true)) {
+                    this.SnField = value;
+                    this.RaisePropertyChanged("Sn");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IScanServer")]
@@ -26,6 +310,24 @@ namespace ClientUintTest.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IScanServer/GetCount", ReplyAction="http://tempuri.org/IScanServer/GetCountResponse")]
         System.Threading.Tasks.Task<string> GetCountAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IScanServer/ScanIn", ReplyAction="http://tempuri.org/IScanServer/ScanInResponse")]
+        string ScanIn(System.IO.Stream stream);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IScanServer/ScanIn", ReplyAction="http://tempuri.org/IScanServer/ScanInResponse")]
+        System.Threading.Tasks.Task<string> ScanInAsync(System.IO.Stream stream);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IScanServer/ScanOut", ReplyAction="http://tempuri.org/IScanServer/ScanOutResponse")]
+        string ScanOut(System.IO.Stream stream);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IScanServer/ScanOut", ReplyAction="http://tempuri.org/IScanServer/ScanOutResponse")]
+        System.Threading.Tasks.Task<string> ScanOutAsync(System.IO.Stream stream);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IScanServer/ScanOutWCE", ReplyAction="http://tempuri.org/IScanServer/ScanOutWCEResponse")]
+        string ScanOutWCE(ClientUintTest.ServiceReference1.ScanInHead scanInHead);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IScanServer/ScanOutWCE", ReplyAction="http://tempuri.org/IScanServer/ScanOutWCEResponse")]
+        System.Threading.Tasks.Task<string> ScanOutWCEAsync(ClientUintTest.ServiceReference1.ScanInHead scanInHead);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -69,6 +371,30 @@ namespace ClientUintTest.ServiceReference1 {
         
         public System.Threading.Tasks.Task<string> GetCountAsync() {
             return base.Channel.GetCountAsync();
+        }
+        
+        public string ScanIn(System.IO.Stream stream) {
+            return base.Channel.ScanIn(stream);
+        }
+        
+        public System.Threading.Tasks.Task<string> ScanInAsync(System.IO.Stream stream) {
+            return base.Channel.ScanInAsync(stream);
+        }
+        
+        public string ScanOut(System.IO.Stream stream) {
+            return base.Channel.ScanOut(stream);
+        }
+        
+        public System.Threading.Tasks.Task<string> ScanOutAsync(System.IO.Stream stream) {
+            return base.Channel.ScanOutAsync(stream);
+        }
+        
+        public string ScanOutWCE(ClientUintTest.ServiceReference1.ScanInHead scanInHead) {
+            return base.Channel.ScanOutWCE(scanInHead);
+        }
+        
+        public System.Threading.Tasks.Task<string> ScanOutWCEAsync(ClientUintTest.ServiceReference1.ScanInHead scanInHead) {
+            return base.Channel.ScanOutWCEAsync(scanInHead);
         }
     }
 }

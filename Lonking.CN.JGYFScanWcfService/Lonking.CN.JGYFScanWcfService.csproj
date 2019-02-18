@@ -12,7 +12,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Lonking.CN.JGYFScanWcfService</RootNamespace>
     <AssemblyName>Lonking.CN.JGYFScanWcfService</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <UseIISExpress>true</UseIISExpress>
@@ -22,6 +22,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -48,11 +49,13 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
-    <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -77,6 +80,16 @@
     <Compile Include="Modal\GoodAttribute.cs" />
     <Compile Include="Modal\IScanEntry.cs" />
     <Compile Include="Modal\IScanHead.cs" />
+    <Compile Include="Modal\K3Modal\ICStockBill.cs" />
+    <Compile Include="Modal\K3Modal\ICStockBillEntry.cs" />
+    <Compile Include="Modal\K3Modal\K3Model.cs" />
+    <Compile Include="Modal\K3Modal\t_Department.cs" />
+    <Compile Include="Modal\K3Modal\t_Item.cs" />
+    <Compile Include="Modal\K3Modal\vwICBill_11.cs" />
+    <Compile Include="Modal\K3Modal\vwICBill_2.cs" />
+    <Compile Include="Modal\K3Modal\vwICBill_8.cs" />
+    <Compile Include="Modal\K3Modal\vw_ICCustomerInfo.cs" />
+    <Compile Include="Modal\SaleBillInfo.cs" />
     <Compile Include="Modal\ScanInEntry.cs" />
     <Compile Include="Modal\ScanInHead.cs" />
     <Compile Include="Modal\ScanInv.cs" />

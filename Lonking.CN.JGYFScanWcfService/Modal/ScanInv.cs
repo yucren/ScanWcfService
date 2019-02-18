@@ -15,9 +15,10 @@ namespace Lonking.CN.JGYFScanWcfService.Modal
         public string ItemName { get; set; }
         [Required]
         public string ItemModel { get; set; }
+        [Required]
        
         public string Sn { get; set; }
-        [Required]
-        public DateTime Scantime { get; set; }
+      
+
     }
 }

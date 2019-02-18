@@ -11,6 +11,8 @@ namespace Lonking.CN.JGYFScanWcfService.Modal
     {
         public int ID { get; set; }
         [Required]
+        [MaxLength(20,ErrorMessage ="单据编号不能超过20个字符")]
+       
         public string DocNo { get; set; }
         [Required]
         public DateTime Scantime { get; set; }

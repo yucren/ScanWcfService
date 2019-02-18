@@ -4,6 +4,8 @@
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
       <xsd:import schemaLocation="http://localhost:12120/ScanServer.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="http://localhost:12120/ScanServer.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:12120/ScanServer.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/Message" />
+      <xsd:import schemaLocation="http://localhost:12120/ScanServer.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Lonking.CN.JGYFScanWcfService.Modal" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IScanServer_DoWork_InputMessage">
@@ -18,6 +20,24 @@
   <wsdl:message name="IScanServer_GetCount_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetCountResponse" />
   </wsdl:message>
+  <wsdl:message name="IScanServer_ScanIn_InputMessage">
+    <wsdl:part name="parameters" element="tns:ScanIn" />
+  </wsdl:message>
+  <wsdl:message name="IScanServer_ScanIn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ScanInResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScanServer_ScanOut_InputMessage">
+    <wsdl:part name="parameters" element="tns:ScanOut" />
+  </wsdl:message>
+  <wsdl:message name="IScanServer_ScanOut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ScanOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScanServer_ScanOutWCE_InputMessage">
+    <wsdl:part name="parameters" element="tns:ScanOutWCE" />
+  </wsdl:message>
+  <wsdl:message name="IScanServer_ScanOutWCE_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ScanOutWCEResponse" />
+  </wsdl:message>
   <wsdl:portType name="IScanServer">
     <wsdl:operation name="DoWork">
       <wsdl:input wsaw:Action="http://tempuri.org/IScanServer/DoWork" message="tns:IScanServer_DoWork_InputMessage" />
@@ -26,6 +46,18 @@
     <wsdl:operation name="GetCount">
       <wsdl:input wsaw:Action="http://tempuri.org/IScanServer/GetCount" message="tns:IScanServer_GetCount_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IScanServer/GetCountResponse" message="tns:IScanServer_GetCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ScanIn">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScanServer/ScanIn" message="tns:IScanServer_ScanIn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScanServer/ScanInResponse" message="tns:IScanServer_ScanIn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ScanOut">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScanServer/ScanOut" message="tns:IScanServer_ScanOut_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScanServer/ScanOutResponse" message="tns:IScanServer_ScanOut_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ScanOutWCE">
+      <wsdl:input wsaw:Action="http://tempuri.org/IScanServer/ScanOutWCE" message="tns:IScanServer_ScanOutWCE_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IScanServer/ScanOutWCEResponse" message="tns:IScanServer_ScanOutWCE_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IScanServer" type="tns:IScanServer">
@@ -41,6 +73,33 @@
     </wsdl:operation>
     <wsdl:operation name="GetCount">
       <soap:operation soapAction="http://tempuri.org/IScanServer/GetCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScanIn">
+      <soap:operation soapAction="http://tempuri.org/IScanServer/ScanIn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScanOut">
+      <soap:operation soapAction="http://tempuri.org/IScanServer/ScanOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ScanOutWCE">
+      <soap:operation soapAction="http://tempuri.org/IScanServer/ScanOutWCE" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

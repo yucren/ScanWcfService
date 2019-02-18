@@ -10,7 +10,7 @@ namespace Lonking.CN.JGYFScanWcfService.Modal
     interface IScanHead<T>
     {
         int ID { get; set; }
-        [Required]
+        [Required]        
         string DocNo { get; set; }
         [Required]
         DateTime Scantime { get; set; }

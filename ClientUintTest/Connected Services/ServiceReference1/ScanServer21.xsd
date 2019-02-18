@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Lonking.CN.JGYFScanWcfService.Modal" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Lonking.CN.JGYFScanWcfService.Modal" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ScanInHead">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DocNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Operator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ScanCount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ScanEntrys" nillable="true" type="tns:ArrayOfScanInEntry" />
+      <xs:element minOccurs="0" name="Scantime" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ScanInHead" nillable="true" type="tns:ScanInHead" />
+  <xs:complexType name="ArrayOfScanInEntry">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ScanInEntry" nillable="true" type="tns:ScanInEntry" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfScanInEntry" nillable="true" type="tns:ArrayOfScanInEntry" />
+  <xs:complexType name="ScanInEntry">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="ItemCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ItemModel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ItemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ScanInHead" nillable="true" type="tns:ScanInHead" />
+      <xs:element minOccurs="0" name="ScanInHeadID" type="xs:int" />
+      <xs:element minOccurs="0" name="Sn" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ScanInEntry" nillable="true" type="tns:ScanInEntry" />
+</xs:schema>

@@ -22,10 +22,12 @@
     <MetadataSource Address="http://localhost:12120/ScanServer.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ScanServer.xsd" MetadataType="Schema" ID="1beca7b8-73df-4452-bc21-3c9835c916c5" SourceId="1" SourceUrl="http://localhost:12120/ScanServer.svc?xsd=xsd1" />
     <MetadataFile FileName="ScanServer.disco" MetadataType="Disco" ID="0f23efec-7f3d-48e6-8e7e-289ce972f83a" SourceId="1" SourceUrl="http://localhost:12120/ScanServer.svc?disco" />
-    <MetadataFile FileName="ScanServer.wsdl" MetadataType="Wsdl" ID="ac68a499-2910-46f2-a1c1-03224eed99ae" SourceId="1" SourceUrl="http://localhost:12120/ScanServer.svc?wsdl" />
+    <MetadataFile FileName="ScanServer2.xsd" MetadataType="Schema" ID="bf642b4b-91cd-4fe7-9696-b789a1f317ce" SourceId="1" SourceUrl="http://localhost:12120/ScanServer.svc?xsd=xsd2" />
+    <MetadataFile FileName="ScanServer21.xsd" MetadataType="Schema" ID="090966ec-1c4e-435f-991f-459656b5e0a7" SourceId="1" SourceUrl="http://localhost:12120/ScanServer.svc?xsd=xsd3" />
     <MetadataFile FileName="ScanServer1.xsd" MetadataType="Schema" ID="774ffbe3-b08b-4b9a-b6da-238bb71fb080" SourceId="1" SourceUrl="http://localhost:12120/ScanServer.svc?xsd=xsd0" />
+    <MetadataFile FileName="ScanServer.xsd" MetadataType="Schema" ID="1beca7b8-73df-4452-bc21-3c9835c916c5" SourceId="1" SourceUrl="http://localhost:12120/ScanServer.svc?xsd=xsd1" />
+    <MetadataFile FileName="ScanServer.wsdl" MetadataType="Wsdl" ID="ac68a499-2910-46f2-a1c1-03224eed99ae" SourceId="1" SourceUrl="http://localhost:12120/ScanServer.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

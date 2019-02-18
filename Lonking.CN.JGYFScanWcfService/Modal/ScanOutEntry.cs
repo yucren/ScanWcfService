@@ -18,6 +18,7 @@ namespace Lonking.CN.JGYFScanWcfService.Modal
         public string ItemModel { get; set; }
         [Required]
         public string Sn { get; set; }
+        public virtual ScanOutHead ScanOutHead { get; set; }
          
     }
 }
