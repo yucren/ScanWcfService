@@ -8,7 +8,6 @@ namespace Lonking.CN.JGYFScanWcfService.Modal
 {
     public class ScanOutEntry : IScanEntry
     {
-
         public int ID { get; set; }
         [Required]
         public string ItemCode { get; set; }

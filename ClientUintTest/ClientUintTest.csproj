@@ -62,6 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Connected Services\ServiceReference1\ClientUintTest.ServiceReference1.vwICBill_8.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\ServiceReference1\ScanServer.wsdl" />
     <None Include="Connected Services\ServiceReference1\ScanServer.xsd">
       <SubType>Designer</SubType>
@@ -73,6 +76,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\ServiceReference1\ScanServer21.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1\ScanServer3.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />

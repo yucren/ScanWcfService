@@ -17,8 +17,7 @@ namespace Lonking.CN.JGYFScanWcfService.Modal
         public decimal ScanCount { get; set; }
         [Required]
         public string Operator { get; set; }
-        [Required]
-        [Good]
+           
         public string Note { get; set; }
         [Required]
         public string CustomerName { get; set; }

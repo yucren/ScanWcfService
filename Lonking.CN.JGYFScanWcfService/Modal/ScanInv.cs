@@ -18,6 +18,8 @@ namespace Lonking.CN.JGYFScanWcfService.Modal
         [Required]
        
         public string Sn { get; set; }
+
+        public Boolean IsInStock { get; set; }
       
 
     }

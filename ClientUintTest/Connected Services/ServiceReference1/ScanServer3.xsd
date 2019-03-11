@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Lonking.CN.JGYFScanWcfService.Modal.K3Modal" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Lonking.CN.JGYFScanWcfService.Modal.K3Modal" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfvwICBill_8">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="vwICBill_8" nillable="true" type="tns:vwICBill_8" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfvwICBill_8" nillable="true" type="tns:ArrayOfvwICBill_8" />
+  <xs:complexType name="vwICBill_8">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FAuxPlanPrice" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="FBatchNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FBillerID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FCUUnitID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FCancellation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FCheckFlag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FChkPassItem" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FClosing" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FConsignAmount" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="FConsignPrice" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="FDCSPID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FDCStockID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FEntryID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="FEntrySupply" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FFManagerID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FHookFlag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FInterID" type="xs:int" />
+      <xs:element minOccurs="0" name="FIsVMI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FItemID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FKFDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FKFPeriod" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="FMapName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FMapNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FNote" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FOrgBillInterID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FPlanAmount" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="FQty" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="FRelateBrID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FSManagerID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FSaleStyle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FShortNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FSourceBillNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FSourceTranType" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="FSupplyID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FUnitGroupID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FUnitID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FVchInterID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FVoucherFlag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FZPInterID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Famount" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Fauxprice" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Fauxqty" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="FbillNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fcheckerid" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FcuQty" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Fdate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Fmodel" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="vwICBill_8" nillable="true" type="tns:vwICBill_8" />
+</xs:schema>

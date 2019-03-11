@@ -23,6 +23,7 @@
   </MetadataSources>
   <Metadata>
     <MetadataFile FileName="ScanServer.disco" MetadataType="Disco" ID="0f23efec-7f3d-48e6-8e7e-289ce972f83a" SourceId="1" SourceUrl="http://localhost:12120/ScanServer.svc?disco" />
+    <MetadataFile FileName="ScanServer3.xsd" MetadataType="Schema" ID="64a609de-b12a-4c75-ad8b-5719f4b866f6" SourceId="1" SourceUrl="http://localhost:12120/ScanServer.svc?xsd=xsd4" />
     <MetadataFile FileName="ScanServer2.xsd" MetadataType="Schema" ID="bf642b4b-91cd-4fe7-9696-b789a1f317ce" SourceId="1" SourceUrl="http://localhost:12120/ScanServer.svc?xsd=xsd2" />
     <MetadataFile FileName="ScanServer21.xsd" MetadataType="Schema" ID="090966ec-1c4e-435f-991f-459656b5e0a7" SourceId="1" SourceUrl="http://localhost:12120/ScanServer.svc?xsd=xsd3" />
     <MetadataFile FileName="ScanServer1.xsd" MetadataType="Schema" ID="774ffbe3-b08b-4b9a-b6da-238bb71fb080" SourceId="1" SourceUrl="http://localhost:12120/ScanServer.svc?xsd=xsd0" />

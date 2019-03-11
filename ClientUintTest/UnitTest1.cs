@@ -1,6 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ClientUintTest.ServiceReference1;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace ClientUintTest
 {
@@ -75,7 +77,13 @@ namespace ClientUintTest
 
             scanInHead.ScanEntrys = scanInEntrys;
             scanInHead.ScanCount = scanInEntrys.Length;
-            client.ScanOutWCE(scanInHead);
+            Parallel.For(0, 1000, (i) =>
+            {
+                client.ScanInWCE(scanInHead);
+
+            });
+           
+           
 
 
         }

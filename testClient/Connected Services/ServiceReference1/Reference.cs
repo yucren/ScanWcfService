@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ClientUintTest.ServiceReference1 {
+namespace testClient.ServiceReference1 {
     using System.Runtime.Serialization;
     using System;
     
@@ -38,7 +38,7 @@ namespace ClientUintTest.ServiceReference1 {
         private decimal ScanCountField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ClientUintTest.ServiceReference1.ScanInEntry[] ScanEntrysField;
+        private testClient.ServiceReference1.ScanInEntry[] ScanEntrysField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.DateTime ScantimeField;
@@ -119,7 +119,7 @@ namespace ClientUintTest.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ClientUintTest.ServiceReference1.ScanInEntry[] ScanEntrys {
+        public testClient.ServiceReference1.ScanInEntry[] ScanEntrys {
             get {
                 return this.ScanEntrysField;
             }
@@ -176,7 +176,7 @@ namespace ClientUintTest.ServiceReference1 {
         private string ItemNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ClientUintTest.ServiceReference1.ScanInHead ScanInHeadField;
+        private testClient.ServiceReference1.ScanInHead ScanInHeadField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int ScanInHeadIDField;
@@ -247,7 +247,7 @@ namespace ClientUintTest.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ClientUintTest.ServiceReference1.ScanInHead ScanInHead {
+        public testClient.ServiceReference1.ScanInHead ScanInHead {
             get {
                 return this.ScanInHeadField;
             }
@@ -326,7 +326,7 @@ namespace ClientUintTest.ServiceReference1 {
         private decimal ScanCountField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ClientUintTest.ServiceReference1.ScanOutEntry[] ScanEntrysField;
+        private testClient.ServiceReference1.ScanOutEntry[] ScanEntrysField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.DateTime ScantimeField;
@@ -433,7 +433,7 @@ namespace ClientUintTest.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ClientUintTest.ServiceReference1.ScanOutEntry[] ScanEntrys {
+        public testClient.ServiceReference1.ScanOutEntry[] ScanEntrys {
             get {
                 return this.ScanEntrysField;
             }
@@ -490,7 +490,7 @@ namespace ClientUintTest.ServiceReference1 {
         private string ItemNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ClientUintTest.ServiceReference1.ScanOutHead ScanOutHeadField;
+        private testClient.ServiceReference1.ScanOutHead ScanOutHeadField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string SnField;
@@ -558,7 +558,7 @@ namespace ClientUintTest.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ClientUintTest.ServiceReference1.ScanOutHead ScanOutHead {
+        public testClient.ServiceReference1.ScanOutHead ScanOutHead {
             get {
                 return this.ScanOutHeadField;
             }
@@ -1420,31 +1420,31 @@ namespace ClientUintTest.ServiceReference1 {
         System.Threading.Tasks.Task<string> ScanOutAsync(System.IO.Stream stream);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IScanServer/ScanInWCE", ReplyAction="http://tempuri.org/IScanServer/ScanInWCEResponse")]
-        string ScanInWCE(ClientUintTest.ServiceReference1.ScanInHead scanInHead);
+        string ScanInWCE(testClient.ServiceReference1.ScanInHead scanInHead);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IScanServer/ScanInWCE", ReplyAction="http://tempuri.org/IScanServer/ScanInWCEResponse")]
-        System.Threading.Tasks.Task<string> ScanInWCEAsync(ClientUintTest.ServiceReference1.ScanInHead scanInHead);
+        System.Threading.Tasks.Task<string> ScanInWCEAsync(testClient.ServiceReference1.ScanInHead scanInHead);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IScanServer/ScanOutWCE", ReplyAction="http://tempuri.org/IScanServer/ScanOutWCEResponse")]
-        string ScanOutWCE(ClientUintTest.ServiceReference1.ScanOutHead scanOutHead);
+        string ScanOutWCE(testClient.ServiceReference1.ScanOutHead scanOutHead);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IScanServer/ScanOutWCE", ReplyAction="http://tempuri.org/IScanServer/ScanOutWCEResponse")]
-        System.Threading.Tasks.Task<string> ScanOutWCEAsync(ClientUintTest.ServiceReference1.ScanOutHead scanOutHead);
+        System.Threading.Tasks.Task<string> ScanOutWCEAsync(testClient.ServiceReference1.ScanOutHead scanOutHead);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IScanServer/GetSaleBillInfo", ReplyAction="http://tempuri.org/IScanServer/GetSaleBillInfoResponse")]
-        ClientUintTest.ServiceReference1.vwICBill_8[] GetSaleBillInfo(string billNo);
+        testClient.ServiceReference1.vwICBill_8[] GetSaleBillInfo(string billNo);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IScanServer/GetSaleBillInfo", ReplyAction="http://tempuri.org/IScanServer/GetSaleBillInfoResponse")]
-        System.Threading.Tasks.Task<ClientUintTest.ServiceReference1.vwICBill_8[]> GetSaleBillInfoAsync(string billNo);
+        System.Threading.Tasks.Task<testClient.ServiceReference1.vwICBill_8[]> GetSaleBillInfoAsync(string billNo);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IScanServerChannel : ClientUintTest.ServiceReference1.IScanServer, System.ServiceModel.IClientChannel {
+    public interface IScanServerChannel : testClient.ServiceReference1.IScanServer, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ScanServerClient : System.ServiceModel.ClientBase<ClientUintTest.ServiceReference1.IScanServer>, ClientUintTest.ServiceReference1.IScanServer {
+    public partial class ScanServerClient : System.ServiceModel.ClientBase<testClient.ServiceReference1.IScanServer>, testClient.ServiceReference1.IScanServer {
         
         public ScanServerClient() {
         }
@@ -1497,27 +1497,27 @@ namespace ClientUintTest.ServiceReference1 {
             return base.Channel.ScanOutAsync(stream);
         }
         
-        public string ScanInWCE(ClientUintTest.ServiceReference1.ScanInHead scanInHead) {
+        public string ScanInWCE(testClient.ServiceReference1.ScanInHead scanInHead) {
             return base.Channel.ScanInWCE(scanInHead);
         }
         
-        public System.Threading.Tasks.Task<string> ScanInWCEAsync(ClientUintTest.ServiceReference1.ScanInHead scanInHead) {
+        public System.Threading.Tasks.Task<string> ScanInWCEAsync(testClient.ServiceReference1.ScanInHead scanInHead) {
             return base.Channel.ScanInWCEAsync(scanInHead);
         }
         
-        public string ScanOutWCE(ClientUintTest.ServiceReference1.ScanOutHead scanOutHead) {
+        public string ScanOutWCE(testClient.ServiceReference1.ScanOutHead scanOutHead) {
             return base.Channel.ScanOutWCE(scanOutHead);
         }
         
-        public System.Threading.Tasks.Task<string> ScanOutWCEAsync(ClientUintTest.ServiceReference1.ScanOutHead scanOutHead) {
+        public System.Threading.Tasks.Task<string> ScanOutWCEAsync(testClient.ServiceReference1.ScanOutHead scanOutHead) {
             return base.Channel.ScanOutWCEAsync(scanOutHead);
         }
         
-        public ClientUintTest.ServiceReference1.vwICBill_8[] GetSaleBillInfo(string billNo) {
+        public testClient.ServiceReference1.vwICBill_8[] GetSaleBillInfo(string billNo) {
             return base.Channel.GetSaleBillInfo(billNo);
         }
         
-        public System.Threading.Tasks.Task<ClientUintTest.ServiceReference1.vwICBill_8[]> GetSaleBillInfoAsync(string billNo) {
+        public System.Threading.Tasks.Task<testClient.ServiceReference1.vwICBill_8[]> GetSaleBillInfoAsync(string billNo) {
             return base.Channel.GetSaleBillInfoAsync(billNo);
         }
     }

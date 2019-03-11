@@ -22,6 +22,7 @@
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+           
             Database.SetInitializer<ScanModel>(new Initializer());
             //外键一定要叫visual 不然会modelBuilder没有用
             //   modelBuilder.Entity<ScanInEntry>().HasRequired(p => p.ScanInHead).WithMany(t => t.ScanEntrys).HasForeignKey(p => p.ScanInHeadID).WillCascadeOnDelete(true);

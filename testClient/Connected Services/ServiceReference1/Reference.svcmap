@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="009e27c8-f152-4c3e-af07-0753008e65e0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:12120/ScanServer.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ScanServer.disco" MetadataType="Disco" ID="9f51c618-d966-4ccc-9def-17a3ebef8b42" SourceId="1" SourceUrl="http://localhost:12120/ScanServer.svc?disco" />
+    <MetadataFile FileName="ScanServer.xsd" MetadataType="Schema" ID="1b05c409-ce4f-4955-8eb5-18b3685d2436" SourceId="1" SourceUrl="http://localhost:12120/ScanServer.svc?xsd=xsd4" />
+    <MetadataFile FileName="ScanServer1.xsd" MetadataType="Schema" ID="a3ebb4e1-46e5-491d-8ea8-7e55dc812ae6" SourceId="1" SourceUrl="http://localhost:12120/ScanServer.svc?xsd=xsd2" />
+    <MetadataFile FileName="ScanServer2.xsd" MetadataType="Schema" ID="ad71ffb7-7944-4839-b25c-b6232e102567" SourceId="1" SourceUrl="http://localhost:12120/ScanServer.svc?xsd=xsd3" />
+    <MetadataFile FileName="ScanServer3.xsd" MetadataType="Schema" ID="c794762e-3b58-41ba-9f7a-3cbca408b822" SourceId="1" SourceUrl="http://localhost:12120/ScanServer.svc?xsd=xsd0" />
+    <MetadataFile FileName="ScanServer4.xsd" MetadataType="Schema" ID="10a71df4-bc5c-456d-aa1d-66711703411c" SourceId="1" SourceUrl="http://localhost:12120/ScanServer.svc?xsd=xsd1" />
+    <MetadataFile FileName="ScanServer.wsdl" MetadataType="Wsdl" ID="86599bf8-7b01-4f71-a998-e46441a75b02" SourceId="1" SourceUrl="http://localhost:12120/ScanServer.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
